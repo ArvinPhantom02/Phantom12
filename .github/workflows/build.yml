@@ -21,7 +21,7 @@ jobs:
           cp yolov8n_saved_model/yolov8n_float32.tflite app/src/main/assets/
       - name: Build
         working-directory: PhantomAIVision
-        run: gradle assembleDebug --no-daemon -Dorg.gradle.jvmargs="-Xmx4g"
+    run: gradle assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: apk
